@@ -20,7 +20,8 @@ h6 {
 
 .education-entry,
 .work-entry,
-.project-entry {
+.project-entry, 
+.online-entry{
   padding: 0 5%;
 }
 
@@ -101,7 +102,8 @@ a {
 
 #skills-h3 {
   color: #f5ae23;
-  display: none;
+  display: inline-flex;
+  padding-left: 25em;
 }
 
 .orange {
@@ -143,9 +145,11 @@ a {
 
 .flex-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   padding: 10px;
+  padding-left: 35em;
+
 }
 
 .center-content {
@@ -161,6 +165,10 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+}
+
+#mapDiv{
+  padding-left: 3em;
 }
 
 img {

@@ -103,7 +103,7 @@ var bio = {
  		"location": "Santiago de los caballeros",
  	},
  	"welcomeMenssage": "Welcome Rodwel To the Bio",
- 	"skills": ["awessomeness","Programming","teaching","JS"],
+ 	"skills": ["Web-Developer","Programmer","Python","JS","C","C++","Computer_tecnician"],
  	"pictureUrl": "images/photo.jpg"
 }
 
@@ -177,6 +177,14 @@ if (bio.skills.length > 0) {
 	$("#skills").append(formattedSkill);
 	formattedSkill = HTMLskills.replace("%data%",bio.skills[3]);
 	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%",bio.skills[4]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%",bio.skills[5]);
+	$("#skills").append(formattedSkill);
+}
+
+function biodisplay(){
+	$("")
 }
 
 function displayWork(){
@@ -286,18 +294,15 @@ function educationOnlinedisplay(){
 		var formattedTitle = HTMLonlineTitle.replace('%data%',education.onlinecourse[two].title);
 		var formattedSchools = HTMLonlineSchool.replace('%data%',education.onlinecourse[two].schools);
 		var formattedDegreeSchools = formattedTitle + formattedSchools;
-		$('.education-entry:last').append(formattedDegreeSchools);
+		$('.online-entry:last').append(formattedDegreeSchools);
 		var formattedDates = HTMLonlineDates.replace('%data%',education.onlinecourse[two].dates);
-		$('.education-entry:last').append(formattedDates);
+		$('.online-entry:last').append(formattedDates);
 		var formattedUrl = HTMLonlineURL.replace('%data%',education.onlinecourse[two].url);
-		$('.education-entry:last').append(formattedUrl);
+		$('.online-entry:last').append(formattedUrl);
 
 	}
 }
 educationOnlinedisplay();
-
-
-
 
 
 

@@ -103,7 +103,7 @@ a {
 #skills-h3 {
   color: #f5ae23;
   display: inline-flex;
-  padding-left: 25em;
+  padding-left: 35em;
 }
 
 .orange {
@@ -148,7 +148,7 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 10px;
-  padding-left: 35em;
+  padding-left: 45em;
 
 }
 

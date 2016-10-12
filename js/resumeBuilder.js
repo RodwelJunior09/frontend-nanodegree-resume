@@ -8,11 +8,6 @@ This is empty on purpose! Your code to build the resume will go here.
  var funthoughts = awessomethoughts.replace('awessome','fun');
 
  ///$('#main').append([funthoughts]);
-
- var name = 'Rodwel Polanco Martinez';
- var formattedname = HTMLheaderName.replace('%data%', name);
- var role = 'Web Developer';
- var formattedRole = HTMLheaderRole.replace('%data%',role);
 */
 
  /*nombre = 'audacity';
@@ -93,7 +88,7 @@ console.log(nameChanger(name));
 // var Skills = ["awessomeness","Programming","teaching","JS"];
 
 var bio = {
-	"name": "Rodwel",
+	"name": "Rodwel Polanco Martinez",
  	"role": "Web Developer",
  	"contact": {
  		"mobile": "809-971-4957",
@@ -166,6 +161,15 @@ var education = {
 	
 //document.getElementById('education').style.display = "none";
 
+function Rolenamedisplay(){
+	var formattedname = HTMLheaderName.replace('%data%',bio.name);
+	$("#header").append(formattedname);
+	var formattedrole = HTMLheaderRole.replace('%data%',bio.role);
+	$("#header").append(formattedrole);
+}
+
+Rolenamedisplay();
+
 if (bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);
 
@@ -204,6 +208,7 @@ function displayWork(){
 }
 
 displayWork();
+
 /*
 function projectdisplay(){
 	for(var project in projects) {
@@ -304,7 +309,11 @@ function educationOnlinedisplay(){
 }
 educationOnlinedisplay();
 
+function mapDisplay(){
+	$("#mapDiv").append(googleMaps);
+}
 
+mapDisplay();
 
 
 

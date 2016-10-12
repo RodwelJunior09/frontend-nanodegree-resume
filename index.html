@@ -30,7 +30,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
-<!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyA-gTteRuPGLiB0holNNyRlGtjKyS72FH4"></script> 
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -62,7 +62,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     </div>
     <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1033.8067096789596!2d-70.66695518062815!3d19.429742823394996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sdo!4v1476110619279" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1033.8067096789596!2d-70.66695518062815!3d19.429742823394996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sdo!4v1476110619279" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
     </div>
     <div id="lets-connect" class="dark-gray">
       <h2 class="orange center-text">Let's Connect</h2>
@@ -153,8 +153,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       //document.getElementById('flex-item').style.display = 'none';
       document.getElementById('flex-item').style.backgroundColor = 'black';
     }
-    if(document.getElementsByClassName('map-Div').length === 0) {
-      //document.getElementById('mapDiv').style.display = 'none';
+    if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.backgroundColor = 'black';
     }
   </script>

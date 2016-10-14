@@ -97,13 +97,14 @@ a {
   font-style: italic;
   font-size: 18px;
   color: #f3f3f3;
-  line-height: 28px;
+  line-height: 30px;
+  padding-left: 3.5em;
 }
 
 #skills-h3 {
   color: #f5ae23;
   display: inline-flex;
-  padding-left: 35em;
+  padding-left: 25em;
 }
 
 .orange {
@@ -142,13 +143,19 @@ a {
   justify-content: space-around;
   padding: 10px;
 }
+.flex-item{
+  list-style: none;
+  padding: 5px;  
+  display: inline-flex;
+
+}
 
 .flex-column {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 10px;
-  padding-left: 45em;
+  padding-left: 20em;
 
 }
 
@@ -166,13 +173,14 @@ ul {
   width: 200px;
   display: none;
 }
-
 #mapDiv{
   padding-left: 3em;
 }
 
 img {
   padding: 10px;
+  width: 500px;
+  padding-left: 20px;
 }
 
 span {
